@@ -11,6 +11,8 @@
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-cyan-400: oklch(78.9% 0.154 211.53);
     --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
@@ -192,6 +194,39 @@
   .left-0 {
     left: 0px;
   }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-11 {
+    margin-top: calc(var(--spacing) * 11);
+  }
+  .mt-11\.5 {
+    margin-top: calc(var(--spacing) * 11.5);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mt-35 {
     margin-top: calc(var(--spacing) * 35);
   }
@@ -213,6 +248,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -231,17 +269,74 @@
   .w-230 {
     width: calc(var(--spacing) * 230);
   }
+  .w-\[2px\] {
+    width: 2px;
+  }
+  .w-\[28px\] {
+    width: 28px;
+  }
+  .w-\[29px\] {
+    width: 29px;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .w-\[250px\] {
+    width: 250px;
+  }
+  .w-\[270px\] {
+    width: 270px;
+  }
+  .w-\[280px\] {
+    width: 280px;
+  }
+  .w-\[285px\] {
+    width: 285px;
+  }
+  .w-\[289px\] {
+    width: 289px;
+  }
+  .w-\[290px\] {
+    width: 290px;
+  }
+  .w-\[291px\] {
+    width: 291px;
+  }
+  .w-\[292px\] {
+    width: 292px;
+  }
+  .w-\[295px\] {
+    width: 295px;
+  }
+  .w-\[298px\] {
+    width: 298px;
+  }
   .w-\[300px\] {
     width: 300px;
   }
+  .w-\[320px\] {
+    width: 320px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
   .w-\[700px\] {
     width: 700px;
+  }
+  .w-\[3200px\] {
+    width: 3200px;
+  }
+  .w-\[px\] {
+    width: px;
   }
   .border-collapse {
     border-collapse: collapse;
   }
   .animate-gradient-text {
     animation: var(--animate-gradient-text);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -258,17 +353,23 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
-  }
-  .rounded {
-    border-radius: 0.25rem;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -309,8 +410,8 @@
   .bg-clip-text {
     background-clip: text;
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -333,26 +434,11 @@
   .pt-0 {
     padding-top: 0px;
   }
-  .pt-1 {
-    padding-top: var(--spacing);
-  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
-  }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
-  }
-  .pt-10 {
-    padding-top: calc(var(--spacing) * 10);
-  }
-  .pt-13 {
-    padding-top: calc(var(--spacing) * 13);
-  }
-  .pt-15 {
-    padding-top: calc(var(--spacing) * 15);
   }
   .pt-18 {
     padding-top: calc(var(--spacing) * 18);
@@ -400,11 +486,17 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .text-\[40px\] {
     font-size: 40px;
   }
   .text-\[85px\] {
     font-size: 85px;
+  }
+  .text-\[250px\] {
+    font-size: 250px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -416,6 +508,12 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-gray-50 {
+    color: var(--color-gray-50);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
   .text-gray-700 {
     color: var(--color-gray-700);
   }
@@ -424,6 +522,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
