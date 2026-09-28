@@ -10,10 +10,17 @@
     --animate-gradient-text: gradientMove 4s ease infinite;
 }
  
- @keyframes slideRight {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(0); }
-        }
-    
-        .animate-slide-2 {
-        animation: slideRight 35s linear infinite !important;
+
+@keyframes slide {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-slide {
+    animation: slide 40s linear infinite;
+}
